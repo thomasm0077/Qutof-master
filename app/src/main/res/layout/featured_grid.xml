@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/featured_grid_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/demo2"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#85000000"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="false">
+
+            <com.example.user.qutof.utils.GothamBookTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra 30%"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"
+                android:textSize="11sp"
+                android:textColor="#ffffff"/>
+
+            <com.example.user.qutof.utils.GothamBoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABHAYA FASHION"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:src="@drawable/aarow"
+            android:tint="#ffffff"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

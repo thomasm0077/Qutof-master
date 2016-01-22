@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@drawable/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView2" />
+
+    <com.example.user.qutof.utils.GothamBookTextview
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="SELECT YOUR COUNTRY"
+        android:paddingLeft="42dp"
+        android:textColor="#242424"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/splash_screen_spinner"
+        android:background="@drawable/splash"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/splash_screen_spinner"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_above="@+id/textView2"
+        android:weightSum="1">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="45dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Go"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:id="@+id/splash_screen_button1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:paddingRight="44dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="6dp"
+                android:background="#52a1ef"
+                android:textSize="20dp"
+                android:id="@+id/splash_screen_button2" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

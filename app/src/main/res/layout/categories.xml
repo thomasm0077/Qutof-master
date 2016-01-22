@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/categories_toptoolbar" >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:paddingTop="14dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent">
+
+                <com.example.user.qutof.utils.GothamBookTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Categories"
+                    android:textSize="20dp"
+                    android:textColor="#020202"
+                    android:id="@+id/clothings_toptoolbar_textView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:paddingTop="13dp"
+                android:paddingLeft="28dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:src="@drawable/search"
+                    android:id="@+id/clothings_toptoolbar_imageView2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingRight="12dp"
+                android:paddingTop="13dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:src="@drawable/bag"
+                    android:id="@+id/clothings_toptoolbar_imageView3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/below_border"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#adafb0"
+        android:layout_below="@+id/categories_toptoolbar">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68.33dp"
+        android:layout_below="@+id/categories_toptoolbar" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/clothing"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll1">
+
+        <com.example.user.qutof.utils.GothamBookTextview
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:paddingTop="6dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:text="CLOTHINGS"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/aarow"
+            android:id="@+id/categories_imageView2" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68.33dp"
+        android:layout_below="@+id/ll2" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/shoes"
+            android:id="@+id/imageView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll3">
+
+        <com.example.user.qutof.utils.GothamBookTextview
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingTop="6dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="21dp"
+            android:textColor="#000000"
+            android:text="SHOES"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/aarow"
+            android:id="@+id/categories_imageView4" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68.33dp"
+        android:layout_below="@+id/ll4" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bags"
+            android:id="@+id/imageView5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll5">
+
+        <com.example.user.qutof.utils.GothamBookTextview
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingTop="6dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="21dp"
+            android:textColor="#000000"
+            android:text="BAGS"
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/aarow"
+            android:id="@+id/categories_imageView6" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68.33dp"
+        android:layout_below="@+id/ll6" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/accessories"
+            android:id="@+id/imageView7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll7">
+
+        <com.example.user.qutof.utils.GothamBookTextview
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingTop="6dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="21dp"
+            android:text="ACCESSORIES"
+            android:textColor="#000000"
+            android:id="@+id/textView4" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/aarow"
+            android:id="@+id/categories_imageView8" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/categories_botmtoolbar"
+        android:background="#adafb0"/>
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/categories_botmtoolbar"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#f3f3f3"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_grey_featured"
+                    android:id="@+id/categories_menu_imageView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_grey_justin2"
+                    android:id="@+id/categories_menu_imageView2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_grey_designers"
+                    android:id="@+id/categories_menu_imageView3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_black_categories"
+                    android:id="@+id/categories_menu_imageView4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/meny_grey_more2"
+                    android:id="@+id/categories_menu_imageView5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+</RelativeLayout>
