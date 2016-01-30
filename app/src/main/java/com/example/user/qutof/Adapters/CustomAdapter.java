@@ -60,9 +60,9 @@ public class CustomAdapter extends BaseAdapter {
         View rowView;
         rowView = inflater.inflate(R.layout.clothings_custom, null);
         holder.tv=(TextView) rowView.findViewById(R.id.clothings_custom_textView1);
-        holder.iv= (ImageView) rowView.findViewById(R.id.clothings_custom_imageView1);
+        //holder.iv= (ImageView) rowView.findViewById(R.id.clothings_custom_imageView1);
         holder.tv.setText(result[position]);
-        holder.iv.setImageResource(R.drawable.next);
+       // holder.iv.setImageResource(R.drawable.next);
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
